@@ -23,8 +23,8 @@ This is a food recipe app mobile application that allows users to discover and e
 
 To get started with the Food Recipe App, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/food-recipe-app.git`
-2. Navigate to the project directory: `cd food-recipe-app`
+1. Clone the repository: `git clone https://github.com/your-username/Savory.git`
+2. Navigate to the project directory: `cd Savory`
 3. Install dependencies: `flutter pub get`
 4. Run the app: `flutter run`
 
