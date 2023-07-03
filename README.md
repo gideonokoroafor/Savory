@@ -41,3 +41,9 @@ This project is licensed under the [MIT License](LICENSE).
 ---
 
 Feel free to customize the above template to fit the specific details and requirements of your Food Recipe App project.
+
+## Images
+
+![Alt text](<assets/images/Simulator Screen Shot - iPhone 14 Plus - 2023-07-03 at 00.20.42.png>)
+
+![Alt text](<assets/images/Simulator Screen Shot - iPhone 14 Plus - 2023-07-03 at 00.21.13.png>)
