@@ -6,6 +6,7 @@ class RecipeDetails extends StatelessWidget {
   final String name;
   final String cooktime;
   final String ratings;
+  final String numberOfServing;
   final String? description;
   final List<String> preparationSteps;
   const RecipeDetails(
@@ -14,6 +15,7 @@ class RecipeDetails extends StatelessWidget {
       required this.name,
       required this.cooktime,
       required this.ratings,
+      required this.numberOfServing,
       required this.preparationSteps,
       required this.description});
 
@@ -77,8 +79,8 @@ class RecipeDetails extends StatelessWidget {
                   constantReviewTimeRatings(Icons.star, ratings, "Ratings"),
                   constantReviewTimeRatings(
                       Icons.schedule, slicedCooktime, slicedCooktime1),
-                  constantReviewTimeRatings(
-                      Icons.filter_drama_sharp, "230", "Calories"),
+                  constantReviewTimeRatings(Icons.restaurant_menu_rounded,
+                      numberOfServing, "Servings"),
                 ],
               ),
             ),
