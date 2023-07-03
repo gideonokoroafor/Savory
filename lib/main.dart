@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:savory/components/bottom_nav_bar.dart';
+import 'package:savory/screens/home_screen.dart';
 import 'package:savory/services/dotenv.dart';
 
 void main() async {
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const BottomNavBar(),
+      home: const HomeScreen(),
     );
   }
 }
