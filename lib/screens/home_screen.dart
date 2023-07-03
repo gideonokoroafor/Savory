@@ -92,13 +92,12 @@ class _HomeScreenState extends State<HomeScreen> {
                   ? const Center(
                       child: CircularProgressIndicator(),
                     )
-                  : SizedBox(
-                      height: 200,
+                  : Expanded(
                       child: ListView.builder(
-                        scrollDirection: Axis.horizontal,
+                        scrollDirection: Axis.vertical,
                         itemCount: recipes.length,
                         itemBuilder: (context, index) {
-                          return Row(
+                          return Column(
                             children: [
                               GestureDetector(
                                 onTap: () {
@@ -111,6 +110,9 @@ class _HomeScreenState extends State<HomeScreen> {
                                                 .rating
                                                 .toString(),
                                             thumbnail: recipes[index].images,
+                                            numberOfServing: recipes[index]
+                                                .numberOfServings
+                                                .toString(),
                                             preparationSteps:
                                                 recipes[index].preparationSteps,
                                             description:
@@ -125,7 +127,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 ),
                               ),
                               const SizedBox(
-                                width: 10,
+                                height: 10,
                               )
                             ],
                           );
