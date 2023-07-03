@@ -3,6 +3,7 @@ class Recipe {
   final String images;
   final double rating;
   final String totalTime;
+  final int numberOfServings;
   final String? description;
   final List<String> preparationSteps;
 
@@ -11,6 +12,7 @@ class Recipe {
     required this.images,
     required this.rating,
     required this.totalTime,
+    required this.numberOfServings,
     this.description,
     required this.preparationSteps,
   });
@@ -25,6 +27,7 @@ class Recipe {
       images: json['images'][0]['hostedLargeUrl'] as String,
       rating: json['rating'] as double,
       totalTime: json['totalTime'] as String,
+      numberOfServings: json['numberOfServings'] as int,
       description: description != null ? description['text'] as String : null,
       preparationSteps: preparationSteps,
     );
@@ -48,7 +51,6 @@ class Recipe {
 
   @override
   String toString() {
-    return 'Recipe {name: $name, images: $images, rating: $rating, totalTime: $totalTime, description: $description, preparationSteps: $preparationSteps}';
+    return 'Recipe {name: $name, images: $images, rating: $rating, totalTime: $totalTime, numberOfServings: $numberOfServings, description: $description, preparationSteps: $preparationSteps}';
   }
 }
-
